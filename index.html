@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="heder">
@@ -68,9 +69,9 @@
                         />
                     </li>
                 </ul>
-                <div class="about-content">
+                <div class="about-content" data-aos="fade-right">
                     <p class="about-top-text top-text">Про нас</p>
-                    <h2 class="about-title title">Кращий Барбершоп твого міста</h2>
+                    <h2 class="about-title title" >Кращий Барбершоп твого міста</h2>
                     <p class="about-bottom-text bottom-text">Якщо ти хочеш додати до свого образу більше впевненості – тобі точно до нас.</p>
                     <p class="about-text">Ми команда, яка ніколи не зупиняється на досягнутому та прагне змін. І коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш бути колишнім. Ми команда, яка завжди з клієнтами "на одній хвилі". Тому, ми завжди готові вдосконалювати кожного, хто до нас приходить!</p>
                     <button type="button" class="about-btn">Онлайн-запис</button>
@@ -81,10 +82,10 @@
         <!-- PRICE -->
         <section class="prices">
             <div class="container">
-                <p class="prices-top-text">Проведи час в компанії кращих майстрів</p>
+                <p class="prices-top-text top-text">Проведи час в компанії кращих майстрів</p>
                 <h2 class="prices-title">Послуги та ціни</h2>
                 <div class="prices-wrap">
-                    <ul class="prices-list list">
+                    <ul class="prices-list prices__list--light list">
                         <li class="prices-item">
                             <p class="price-item-text">Чоловіча стрижка</p>
                             <p class="price-item-text">від 300 грн.</p>
@@ -102,7 +103,7 @@
                             <p class="price-item-text">від 200 грн.</p>
                         </li>
                     </ul>
-                    <ul class="prices-list list">
+                    <ul class="prices-list prices__list--dark list">
                         <li class="prices-item">
                             <p class="price-item-text">Стрижка у стажера</p>
                             <p class="price-item-text">від 50 грн.</p>
@@ -127,36 +128,36 @@
             <!-- Переваги -->
         <section class="benefits">
             <div class="container">
-                <ul class="benefits-list list">
-                    <li class="benefits-item">
-                        <span class="benefits-item-count">600</span>
-                        <p class="benefits-item-text">Задоволених клієнтів на день</p>
+                <ul class="benefits__list list">
+                    <li class="benefits__item">
+                        <span class="benefits__item-count">600</span>
+                        <p class="benefits__item-text">Задоволених клієнтів на день</p>
                     </li>
-                    <li class="benefits-item">
-                        <span class="benefits-item-count">50</span>
-                        <p class="benefits-item-text">Нагород за відмінний сервіс</p>
+                    <li class="benefits__item">
+                        <span class="benefits__item-count">50</span>
+                        <p class="benefits__item-text">Нагород за відмінний сервіс</p>
                     </li>
-                    <li class="benefits-item">
-                        <span class="benefits-item-count">20</span>
-                        <p class="benefits-item-text">Найкращих майстрів Києва</p>
+                    <li class="benefits__item">
+                        <span class="benefits__item-count">20</span>
+                        <p class="benefits__item-text">Найкращих майстрів Києва</p>
                     </li>
-                    <li class="benefits-item">
-                        <span class="benefits-item-count">100</span>
-                        <p class="benefits-item-text">Подарунків постійним клієнтам</p>
+                    <li class="benefits__item">
+                        <span class="benefits__item-count">100</span>
+                        <p class="benefits__item-text">Подарунків постійним клієнтам</p>
                     </li>
                 </ul>
-                    <p class="benefits-top-text top-text">Стара традиційна школа</p>
-                    <h2 class="benefits-title title">Чому приходять саме до нас?</h2>
-                    <p class="benefits-bottom-text bottom-text">Про нас говорять лише хороше. Але краще 1 раз побачити та відчути, ніж 10 разів прочитати.</p>
+                    <p class="benefits__top-text top-text">Стара традиційна школа</p>
+                    <h2 class="benefits__title title">Чому приходять саме до нас?</h2>
+                    <p class="benefits__bottom-text bottom-text">Про нас говорять лише хороше. Але краще 1 раз побачити та відчути, ніж 10 разів прочитати.</p>
             </div>            
         </section>
             <!-- Майстри -->
         <section class="masters">
             <div class="container">
-                <p class="masters-top-text top-text">для справжніх поціновувачів атмосфери</p>
-                <h2 class="masters-title title">Наші майстри</h2>
-                <ul class="masters-list list">
-                    <li class="masters-item">
+                <p class="masters__top-text top-text">для справжніх поціновувачів атмосфери</p>
+                <h2 class="masters__title title">Наші майстри</h2>
+                <ul class="masters__list list">
+                    <li class="masters__item">
                         <img src="./img/img12-min.jpg" 
                             alt="Барбер бреет затылок" 
                             width="370" 
@@ -164,30 +165,30 @@
                         />
                         <h3 lang="en" class="masters-item-title">John Smith</h3>
                         <p lang="en" class="masters-item-text">Extreme Barber</p>
-                        <ul class="masterc-soc-list">
-                            <li class="masterc-soc-item">
-                                <a href="" class="masterc-soc-link link">
+                        <ul class="masters-soc-list">
+                            <li class="masters-soc-item">
+                                <a href="" class="masters-soc-link link">
                                     <svg class="masters-soc-icon" width="20" height="20">
                                         <use href="./img/symbol-defs.svg#icon-inst"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="masterc-soc-item">
-                                <a href="" class="masterc-soc-link link">
+                            <li class="masters-soc-item">
+                                <a href="" class="masters-soc-link link">
                                     <svg class="masters-soc-icon" width="20" height="20">
                                         <use href="./img/symbol-defs.svg#icon-twit"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="masterc-soc-item">
-                                <a href="" class="masterc-soc-link link">
+                            <li class="masters-soc-item">
+                                <a href="" class="masters-soc-link link">
                                     <svg class="masters-soc-icon" width="20" height="20">
                                         <use href="./img/symbol-defs.svg#icon-fb"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="masterc-soc-item">
-                                <a href="" class="masterc-soc-link link">
+                            <li class="masters-soc-item">
+                                <a href="" class="masters-soc-link link">
                                     <svg class="masters-soc-icon" width="20" height="20">
                                         <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                                     </svg>
@@ -196,7 +197,7 @@
                             
                         </ul>
                     </li>
-                    <li class="masters-item">
+                    <li class="masters__item">
                         <img src="./img/img22-min.jpg" 
                             alt="Барбер делает пробор"
                             width="370" 
@@ -205,7 +206,7 @@
                         <h3 lang="en" class="masters-item-title">Michele Doe</h3>
                         <p lang="en" class="masters-item-text">Extreme Barber</p>
                     </li>
-                    <li class="masters-item">
+                    <li class="masters__item">
                         <img src="./img/img32-min.jpg" 
                             alt="Барбер стрежет челку"
                             width="370" 
@@ -265,7 +266,7 @@
                         </li>
                     </ul>
                 </address>
-                <p class="contacts-subtitle">Графік роботи</p>
+                <p class="contacts-subtitle top-text">Графік роботи</p>
                 <p class="contacts-address-item">Щоденно з 9:00 до 22:00</p>
             </div>
         </section>
@@ -290,5 +291,9 @@
             </ul>
         </div>        
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html> 

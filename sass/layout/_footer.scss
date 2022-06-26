@@ -1,0 +1,26 @@
+
+.footer {
+  background: #F7F7F7;
+  padding-top: 57px;
+  padding-bottom: 55px;
+}
+
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9DA4BD;
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.footer-link:focus,
+.footer-link:hover {
+  color: var(--accent-color);
+}

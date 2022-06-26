@@ -1,0 +1,27 @@
+.btn-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+
+    &:hover, &:focus {
+      outline: none;
+      cursor: pointer;
+    }
+    
+    &:hover &__icon,
+    &:focus &__icon{
+      fill: var(--accent-color);
+    } 
+    &__icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      fill: #000000;
+    }
+  }
