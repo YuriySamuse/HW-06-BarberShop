@@ -38,7 +38,7 @@ img {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
+}
 
 .container {
     width: 1200px;
@@ -63,23 +63,23 @@ img {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     }
-  
- .title {
+
+.title {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 42px;
     line-height: 1.16;
     letter-spacing: 0.05em;
     color: var(--second-title-clolr);
- }
- .bottom-text {
+}
+.bottom-text {
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--bottom-text-color);
- }
+}
 
- .btn {
+.btn {
     min-width: 160px;
     height: 40px;
     font-family: inherit;
@@ -92,7 +92,7 @@ img {
     border: 1px solid var(--accent-color);
     background-color: transparent;
     border-radius: 25px;
- }
+}
 
 /* ----Heder---- */
 
@@ -180,6 +180,10 @@ img {
 
 .hero-content {
     background-color: gray;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-sise: cover;
     padding: 272px 96px 206px 96px;
     flex-grow: 1;
 }
@@ -268,6 +272,10 @@ img {
 /* -----PRICES----- */
 .prices {
     background-color: #303030;
+    background-image: url(../img/prices-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 130px;
     padding-bottom: 130px;
 }
@@ -397,6 +405,34 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: #FF6C00;
+    margin-bottom: 30px;
+}
+
+.masterc-soc-list {
+    display: flex;
+    justify-content: center;
+}
+.masterc-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+.masterc-soc-item:last-child {
+    margin-right: 0;
+}
+
+.masterc-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.masters-soc-icon {
+    fill: var(--main-title-color);
 }
 
 /* --------GALLERY------- */
@@ -430,7 +466,7 @@ img {
 .online-title {
     color: var(--main-title-color);
 }
- 
+
 /* ----CONTACTS----- */
 
 .contacts {
