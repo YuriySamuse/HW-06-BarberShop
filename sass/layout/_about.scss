@@ -8,31 +8,31 @@
   display: flex;
 }
 
-.about-list {
+.about__list {
   display: flex;
 }
 
-.about-item + .about-item {
+.about__item + .about__item {
   margin-left: 30px;
 }
 
-.about-content {
+.about__content {
   margin-left: 64px;
 }
 
-.about-top-text {
+.about__top-text {
   margin-bottom: var(--typical-margin); 
 }
 
-.about-title {
+.about__title {
   margin-bottom: var(--typical-margin);
 }
 
-.about-bottom-text {
+.about__bottom-text {
   margin-bottom: var(--typical-margin);
 }
 
-.about-text {
+.about__text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
@@ -40,15 +40,7 @@
   margin-bottom: 40px;
   
 }
-.about-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+.about__btn {
   color: #303030;
   box-sizing: border-box;
-  border: 1px solid #FF6C00;
-  border-radius: 25px;
 }

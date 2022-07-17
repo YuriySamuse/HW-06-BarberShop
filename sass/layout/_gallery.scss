@@ -3,17 +3,17 @@
     padding-bottom: 130px;
 }
 
-.gallery-top-text {
+.gallery__top-text {
     color: var(--second-title-clolr);
     margin-bottom: 44px;
 }
 
-.gallery-list {
+.gallery__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.gallery-item {
+.gallery__item {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
