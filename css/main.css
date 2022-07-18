@@ -491,6 +491,8 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1280px;
+  margin: 0 auto;
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -699,10 +701,18 @@ img {
   margin-bottom: 30px;
 }
 
+.online-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
 .online {
   background-color: #191C26;
   padding-top: 130px;
   padding-bottom: 130px;
+  width: 655px;
+  height: 644px;
 }
 
 .online-title {
@@ -710,6 +720,12 @@ img {
 }
 
 .contacts {
+  width: 625px;
+  height: 644px;
+  background-image: url(../img/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #303030;
 }
 

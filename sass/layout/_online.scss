@@ -1,9 +1,18 @@
 
+.online-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+
 .online {
     background-color: #191C26;
     padding-top: 130px;
     padding-bottom: 130px;
+   width: 655px;
+   height: 644px;
 }
+
 .online-title {
     color: var(--main-title-color);
 }
