@@ -15,20 +15,20 @@
 <body>
     <header class="heder">
         <div class="container">
-            <a href="" class="heder-logo">
+            <a href="" class="heder__logo">
                 <img src="./img/Logo.svg" alt="Лого сайта">
             </a>
-            <nav class="heder-nav">
-                <ul class="heder-list list">
-                    <li class="heder-item"><a class="heder-link link" href="">Про нас</a></li>
-                    <li class="heder-item"><a class="heder-link link" href="">Послуги та ціни</a></li>
-                    <li class="heder-item"><a class="heder-link link" href="">Майстри</a></li>
-                    <li class="heder-item"><a class="heder-link link" href="">Контакти</a></li>
+            <nav class="heder__nav">
+                <ul class="heder__list list">
+                    <li class="heder__item"><a class="heder__link link" href="">Про нас</a></li>
+                    <li class="heder__item"><a class="heder__link link" href="">Послуги та ціни</a></li>
+                    <li class="heder__item"><a class="heder__link link" href="">Майстри</a></li>
+                    <li class="heder__item"><a class="heder__link link" href="">Контакти</a></li>
                 </ul>
             </nav>
-            <div class="heder-connect">
-                <a class="heder-tel link" href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
-                <button class="heder-btn btn" type="button">онлайн-запис</Button>
+            <div class="heder__connect">
+                <a class="heder__tel link" href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
+                <button class="heder__btn btn" type="button">онлайн-запис</Button>
             </div>
             
         </div>        
@@ -37,14 +37,27 @@
         <!-- HERO -->
         <section class="hero">
             <div class="container">
-                <ul class="hero-list list">
-                    <li class="hero-item"><a class="hero-link link" href="" target="_blank" rel="noopener nofollow noreferrer">Instagram</a></li>
-                    <li class="hero-item"><a class="hero-link link" href="" target="_blank" rel="noopener nofollow noreferrer">Youtube</a></li>
-                </ul>
-                <div class="hero-content">
-                    <p lang="en" class="hero-top-text top-text">A hair salon for men in Kyiv</p>
-                    <h1 lang="en" class="hero-title">BarberShop</h1>
-                    <p class="hero-bottom-text">Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.</p>
+                <div class="hero__soc">
+                    <ul class="hero__list list">
+                        <li class="hero__item">
+                            <a class="hero__link link" 
+                                href="" 
+                                target="_blank" 
+                                rel="noopener nofollow noreferrer">Instagram
+                            </a>
+                        </li>
+                        <li class="hero__item">
+                                <a class="hero__link link" 
+                                href="" target="_blank" 
+                                rel="noopener nofollow noreferrer">Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero__content">
+                    <p lang="en" class="hero__top-text top-text">A hair salon for men in Kyiv</p>
+                    <h1 lang="en" class="hero__title">BarberShop</h1>
+                    <p class="hero__bottom-text">Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.</p>
                 </div>
             </div>            
         </section>
@@ -305,48 +318,50 @@
             <section class="online">
                 <div class="online-wrap">
                     <h2 class="online-title title">Онлайн-запис</h2>
+                    for
+
                 </div>            
             </section>
 
-            <section class="contacts container">
+            <section class="contacts">
                 <div class="contacts-wrap">
-                    <h2 class="contacts-title title">Контакти</h2>
-                    <address class="contacts-address">
-                        <ul class="contacts-address-list list">
-                            <li class="contacts-address-item bottom-text">
-                                <a href="https://goo.gl/maps/xRiRSeCEvGjVnb6f8"  class="contacts-link link"
+                    <h2 class="contacts__title title">Контакти</h2>
+                    <address class="address">
+                        <ul class="address__list list">
+                            <li class="address__item bottom-text">
+                                <a href="https://goo.gl/maps/xRiRSeCEvGjVnb6f8"  class="address__link link"
                                 target="_blank" rel="noopener nofollow noreferrer">вул. Василькова, 7А Київ, 08132</a>
                             </li>
-                            <li class="contacts-address-item bottom-text">
-                                <a href="tel:+380441111111" class="contacts-link link"
+                            <li class="address__item bottom-text">
+                                <a href="tel:+380441111111" class="address__link link"
                                 >+38 044 111 11 11</a>
                             </li>
-                            <li class="contacts-address-item bottom-text">
-                                <a href="mailto:barbershop@email.com" class="contacts-link"
+                            <li class="address__item bottom-text">
+                                <a href="mailto:barbershop@email.com" class="address__link"
                                 >barbershop@email.com</a>
                             </li>
                         </ul>
                     </address>
-                    <p class="contacts-subtitle top-text">Графік роботи</p>
-                    <p class="contacts-address-item">Щоденно з 9:00 до 22:00</p>
+                    <p class="contacts__subtitle top-text">Графік роботи</p>
+                    <p class="address__item">Щоденно з 9:00 до 22:00</p>
                 </div>
             </section>
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-copy">Copyright 2020</p>
-            <ul class="footer-list list">
-                <li class="footer-item">
+    <footer>
+        <div class="footer container">
+            <p class="footer__copy">Copyright 2022</p>
+            <ul class="footer__list list">
+                <li class="footer__item">
                     <a href="" 
-                    class="footer-link link" 
+                    class="footer__link link" 
                     target="_blank" 
                     rel="noopener nofollow noreferrer">Instagram</a>
                 </li>
-                <li class="footer-item">
+                <li class="footer__item">
                     <a href="" 
-                    class="footer-link link" 
+                    class="footer__link link" 
                     target="_blank" 
                     rel="noopener nofollow noreferrer">Youtube</a>
                 </li>
