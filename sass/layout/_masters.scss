@@ -2,6 +2,7 @@
   background-color: #F7F7F7;
   padding-top: 130px;
   padding-bottom: 130px;
+  width: 100%;
 }
 
 .masters__top-text {
@@ -41,6 +42,7 @@
   height: 100%;
   transform: translateY(100%);
   transition: transform 300ms linear;
+  overflow: auto;
 }
 
 .masters__item-title {

@@ -50,4 +50,9 @@
     border: 1px solid var(--accent-color);
     background-color: transparent;
     border-radius: 25px;
+    transition: color 300ms ease;
+    &:hover, 
+    &:focus {
+        color: var(--accent-color);
+    }
 }
