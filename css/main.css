@@ -1,9 +1,12 @@
 @charset "UTF-8";
 :root {
-  --accent-color: #FF6C00;
-  --main-title-color: #FFFFFF;
+  --accent-color: #ff6c00;
+  --main-title-color: #ffffff;
   --second-title-clolr: #303030;
   --bottom-text-color: #555555;
+  --placeholder-valid-color: rgba(105, 218, 101, 0.733);
+  --placeholder-invalid-color: rgba(218, 101, 101, 0.733);
+  --placeholder-input-color: rgba(238, 241, 48, 0.651);
   --typical-margin: 20px;
 }
 
@@ -137,9 +140,80 @@ img {
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(180deg);
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-bottom: 12px;
+}
+.modal__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: var(--title-color);
+  font-weight: 600;
+}
+.modal__input:focus, .modal__input:hover {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.modal__input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__input:not(:focus):not(:placeholder-shown):valid {
+  background-color: var(--placeholder-valid-color);
+}
+.modal__input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: var(--placeholder-invalid-color);
+}
+.modal__input:focus:not(:placeholder-shown) {
+  background-color: var(--placeholder-input-color);
+}
+.modal__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  margin-bottom: 4px;
+  display: block;
+}
+.modal__field {
+  margin-bottom: 10px;
+}
+.modal__text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+}
+.modal__text:focus, .modal__text:hover {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.modal__text::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .soc__list {

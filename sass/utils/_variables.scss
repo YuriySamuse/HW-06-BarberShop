@@ -1,7 +1,10 @@
 :root {
-  --accent-color: #FF6C00;
-  --main-title-color: #FFFFFF;
+  --accent-color: #ff6c00;
+  --main-title-color: #ffffff;
   --second-title-clolr: #303030;
   --bottom-text-color: #555555;
+  --placeholder-valid-color: rgba(105, 218, 101, 0.733);
+  --placeholder-invalid-color: rgba(218, 101, 101, 0.733);
+  --placeholder-input-color: rgba(238, 241, 48, 0.651);
   --typical-margin: 20px;
 }
