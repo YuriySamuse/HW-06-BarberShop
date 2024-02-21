@@ -4,6 +4,7 @@
   --main-title-color: #ffffff;
   --second-title-clolr: #303030;
   --bottom-text-color: #555555;
+  --online-text-color: rgba(157, 164, 189, 0.4);
   --placeholder-valid-color: rgba(105, 218, 101, 0.733);
   --placeholder-invalid-color: rgba(218, 101, 101, 0.733);
   --placeholder-input-color: rgba(238, 241, 48, 0.651);
@@ -159,14 +160,18 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 5px;
-  margin-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 40px;
   color: var(--title-color);
   font-weight: 600;
+  transition: border-color 300ms ease;
 }
 .modal__input:focus, .modal__input:hover {
   border-color: var(--accent-color);
   outline: none;
+}
+.modal__input:focus + .input__icon, .modal__input:hover + .input__icon {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 .modal__input::placeholder {
   font-weight: 400;
@@ -190,7 +195,7 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--text-color);
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   display: block;
 }
 .modal__field {
@@ -214,6 +219,48 @@ img {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.input__wrap {
+  position: relative;
+}
+
+.input__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 300ms ease;
+}
+
+.check__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.check__text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.check__input:focus + .check__text::before, .check__input:hover + .check__text::before {
+  border-color: var(--accent-color);
+}
+.check__input:checked + .check__text::before {
+  background-color: var(--accent-color);
+  border: none;
+  background-image: url(../../img/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .soc__list {
@@ -711,70 +758,104 @@ img {
   margin-bottom: 30px;
 }
 
-.online-wrap {
+.info-wrap {
+  background-color: #191c26;
+  background-image: url(../img/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px);
   max-width: 1280px;
   margin: 0 auto;
+}
+.info-wrap .container {
   display: flex;
 }
 
 .online {
-  background-color: #191C26;
   padding-top: 130px;
   padding-bottom: 130px;
-  width: 655px;
-  height: 644px;
+  width: calc(50% + 15px);
+  padding-right: 40px;
 }
-
-.online-title {
+.online__title {
+  color: var(--main-title-color);
+  margin-bottom: 44px;
+}
+.online__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.online__item {
+  border: none;
+  border-bottom: 1px solid var(--online-text-color);
+  background-color: transparent;
+  margin-bottom: 44px;
+  color: var(--main-title-color);
+  outline: transparent;
+}
+.online__item:focus {
+  border-color: var(--main-title-color);
+}
+.online__item:focus::placeholder {
+  color: var(--main-title-color);
+}
+.online__input {
+  width: 270px;
+  height: 24px;
+  padding-bottom: 8px;
+}
+.online__input::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--online-text-color);
+}
+.online__text {
+  width: 100%;
+  resize: none;
+}
+.online__btn {
   color: var(--main-title-color);
 }
 
 .contacts {
-  width: 625px;
-  height: 644px;
   padding-top: 130px;
   padding-bottom: 130px;
+  width: calc(50% - 15px);
   padding-left: 100px;
-  background-image: url(../img/contacts-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #303030;
 }
-
 .contacts__title {
   color: var(--main-title-color);
   margin-bottom: 40px;
+}
+.contacts__subtitle {
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .address {
   font-style: normal;
 }
-
 .address__list {
   margin-bottom: 70px;
 }
-
 .address__item {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: #9DA4BD;
+  color: #9da4bd;
 }
 .address__item:not(:last-child) {
   margin-bottom: 20px;
 }
-
 .address__link {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: #9DA4BD;
-}
-
-.contacts__subtitle {
-  color: #FFFFFF;
-  margin-bottom: 20px;
+  color: #9da4bd;
 }
 
 footer {

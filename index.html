@@ -580,47 +580,73 @@
 					</ul>
 				</div>
 			</section>
-			<div class="online-wrap container">
-				<section class="online">
-					<div class="online-wrap">
-						<h2 class="online-title title">Онлайн-запис</h2>
-					</div>
-				</section>
-
-				<section class="contacts">
-					<div class="contacts-wrap">
-						<h2 class="contacts__title title">Контакти</h2>
-						<address class="address">
-							<ul class="address__list list">
-								<li class="address__item bottom-text">
-									<a
-										href="https://goo.gl/maps/xRiRSeCEvGjVnb6f8"
-										class="address__link link"
-										target="_blank"
-										rel="noopener nofollow noreferrer"
-										>вул. Василькова, 7А Київ, 08132</a
-									>
-								</li>
-								<li class="address__item bottom-text">
-									<a
-										href="tel:+380441111111"
-										class="address__link link"
-										>+38 044 111 11 11</a
-									>
-								</li>
-								<li class="address__item bottom-text">
-									<a
-										href="mailto:barbershop@email.com"
-										class="address__link"
-										>barbershop@email.com</a
-									>
-								</li>
-							</ul>
-						</address>
-						<p class="contacts__subtitle top-text">Графік роботи</p>
-						<p class="address__item">Щоденно з 9:00 до 22:00</p>
-					</div>
-				</section>
+			<div class="info-wrap container">
+				<div class="container">
+					<section class="online">
+						<div class="online-wrap">
+							<h2 class="online__title title">Онлайн-запис</h2>
+							<form class="online__form">
+								<input
+									type="text"
+									class="online__input online__item"
+									name="online-name"
+									placeholder="Name*"
+								/>
+								<input
+									type="tel"
+									class="online__input online__item"
+									name="online-tel"
+									placeholder="Phone*"
+								/>
+								<textarea
+									name="online-message"
+									class="online__text online__item"
+									placeholder="Message"
+								></textarea>
+								<button
+									type="submit"
+									class="btn online__btn"
+								>
+									Send
+								</button>
+							</form>
+						</div>
+					</section>
+					<section class="contacts">
+						<div class="contacts-wrap">
+							<h2 class="contacts__title title">Контакти</h2>
+							<address class="address">
+								<ul class="address__list list">
+									<li class="address__item bottom-text">
+										<a
+											href="https://goo.gl/maps/xRiRSeCEvGjVnb6f8"
+											class="address__link link"
+											target="_blank"
+											rel="noopener nofollow noreferrer"
+											>вул. Василькова, 7А Київ, 08132</a
+										>
+									</li>
+									<li class="address__item bottom-text">
+										<a
+											href="tel:+380441111111"
+											class="address__link link"
+											>+38 044 111 11 11</a
+										>
+									</li>
+									<li class="address__item bottom-text">
+										<a
+											href="mailto:barbershop@email.com"
+											class="address__link"
+											>barbershop@email.com</a
+										>
+									</li>
+								</ul>
+							</address>
+							<p class="contacts__subtitle top-text">Графік роботи</p>
+							<p class="address__item">Щоденно з 9:00 до 22:00</p>
+						</div>
+					</section>
+				</div>
 			</div>
 		</main>
 
@@ -650,7 +676,7 @@
 			</div>
 		</footer>
 		<div
-			class="backdrop"
+			class="backdrop is-hidden"
 			data-modal
 		>
 			<div class="modal">
@@ -675,14 +701,23 @@
 							class="modal__label"
 							>Введіть ім'я</label
 						>
-						<input
-							placeholder="Іван Іванович"
-							type="text"
-							name="user-name"
-							class="modal__input"
-							required
-							id="user-name"
-						/>
+						<div class="input__wrap">
+							<input
+								placeholder="Іван Іванович"
+								type="text"
+								name="user-name"
+								class="modal__input"
+								required
+								id="user-name"
+							/>
+							<svg
+								class="input__icon"
+								width="18"
+								height="18"
+							>
+								<use href="./img/symbol-defs.svg#icon-user"></use>
+							</svg>
+						</div>
 					</div>
 					<div class="modal__field">
 						<label
@@ -690,14 +725,23 @@
 							class="modal__label"
 							>Введіть email</label
 						>
-						<input
-							placeholder="Пошту"
-							type="email"
-							name="user-email"
-							class="modal__input"
-							required
-							id="user-email"
-						/>
+						<div class="input__wrap">
+							<input
+								placeholder="Пошту"
+								type="email"
+								name="user-email"
+								class="modal__input"
+								required
+								id="user-email"
+							/>
+							<svg
+								class="input__icon"
+								width="18"
+								height="18"
+							>
+								<use href="./img/symbol-defs.svg#icon-envelop"></use>
+							</svg>
+						</div>
 					</div>
 					<div class="modal__field">
 						<label
@@ -705,15 +749,24 @@
 							class="modal__label"
 							>Введіть Телефон</label
 						>
-						<input
-							placeholder="+380 (96) 111-11-11"
-							type="tel"
-							name="user-tel"
-							class="modal__input"
-							pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-							title="+380 (96) 111-11-11"
-							id="user-tel"
-						/>
+						<div class="input__wrap">
+							<input
+								placeholder="+380 (96) 111-11-11"
+								type="tel"
+								name="user-tel"
+								class="modal__input"
+								pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+								title="+380 (96) 111-11-11"
+								id="user-tel"
+							/>
+							<svg
+								class="input__icon"
+								width="18"
+								height="18"
+							>
+								<use href="./img/symbol-defs.svg#icon-phone"></use>
+							</svg>
+						</div>
 					</div>
 					<div class="modal__field">
 						<label
@@ -728,52 +781,21 @@
 							class="modal__text"
 						></textarea>
 					</div>
-					<fieldset>
-						<legend>Size</legend>
-						<label for="big">Big</label>
-						<input
-							type="radio"
-							name="size"
-							id="big"
-							value="big"
-							checked
-						/>
-						<label for="small">Small</label>
-						<input
-							type="radio"
-							name="size"
-							id="small"
-							value="small"
-						/>
-					</fieldset>
-					<fieldset>
-						<legend>Add</legend>
-						<label for="tomato">Tomato</label>
+					<div class="modal__field">
 						<input
 							type="checkbox"
-							name="add"
-							id="tomato"
-							value="tomato"
-							checked
+							name="policy"
+							id="policy"
+							value="true"
+							class="check__input visually-hidden"
 						/>
-						<label for="cheese">Cheese</label>
-						<input
-							type="checkbox"
-							name="add"
-							id="cheese"
-							value="cheese"
-						/>
-					</fieldset>
-					<select
-						name="city"
-						id="city"
-						class="modal__input"
-						multiple
-					>
-						<option value="London">London</option>
-						<option value="Berlin">Berlin</option>
-						<option value="Kyiv">Kyiv</option>
-					</select>
+						<label
+							for="policy"
+							class="check__text"
+							>Політика конфіденційності</label
+						>
+					</div>
+
 					<button
 						type="submit"
 						class="btn"

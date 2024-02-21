@@ -1,18 +1,72 @@
-
-.online-wrap {
+.info-wrap {
+    background-color: #191c26;
+    background-image: url(../img/contacts-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px);
     max-width: 1280px;
     margin: 0 auto;
-    display: flex;
+
+    & .container {
+        display: flex;
+    }
 }
 
 .online {
-    background-color: #191C26;
     padding-top: 130px;
     padding-bottom: 130px;
-    width: 655px;
-    height: 644px;
-}
+    width: calc(50% + 15px);
+    padding-right: 40px;
 
-.online-title {
-    color: var(--main-title-color);
+    &__title {
+        color: var(--main-title-color);
+        margin-bottom: 44px;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        border: none;
+        border-bottom: 1px solid var(--online-text-color);
+        background-color: transparent;
+        margin-bottom: 44px;
+        color: var(--main-title-color);
+        outline: transparent;
+    }
+
+    &__item:focus {
+        border-color: var(--main-title-color);
+    }
+
+    &__item:focus::placeholder {
+        color: var(--main-title-color);
+    }
+
+    &__input {
+        width: 270px;
+        height: 24px;
+        padding-bottom: 8px;
+    }
+
+    &__input::placeholder {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--online-text-color);
+    }
+
+    &__text {
+        width: 100%;
+        resize: none;
+    }
+
+    &__btn {
+        color: var(--main-title-color);
+    }
 }
