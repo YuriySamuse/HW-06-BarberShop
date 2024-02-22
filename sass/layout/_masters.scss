@@ -1,64 +1,64 @@
 .masters {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding-top: 130px;
   padding-bottom: 130px;
   width: 100%;
-}
 
-.masters__top-text {
-  margin-bottom: var(--typical-margin);
-}
-
-.masters__title {
-  margin-bottom: 44px;
-}
-
-.masters__list {
-  display: flex;
-  margin-left: -30px;
-}
-
-
-.masters__item {
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  &:hover .masters__out-text {
-    transform: translateY(0);
+  &__top-text {
+    margin-bottom: var(--typical-margin);
   }
-}
 
-.masters__out-wrap {
-  position: relative;
-  overflow: hidden;
-}
+  &__title {
+    margin-bottom: 44px;
+  }
 
-.masters__out-text {
-  position: absolute;
-  top: 0;
-  color: #ffffff;
-  background-color: rgba(255, 106, 0, 0.604);
-  line-height: 1.5;
-  padding: 40px;
-  height: 100%;
-  transform: translateY(100%);
-  transition: transform 300ms linear;
-  overflow: auto;
-}
+  &__list {
+    display: flex;
+    margin-left: -30px;
+  }
 
-.masters__item-title {
-  margin-top: 30px;
-  font-size: 18px;
-  line-height: 1.38;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--second-title-clolr);
-}
-.masters__item-text {
-  margin-top: 8px;
-  font-size: 14px;
-  line-height: 1.35;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #FF6C00;
-  margin-bottom: 30px;
+  &__item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    &:hover .masters__out-text {
+      transform: translateY(0);
+    }
+  }
+
+  &__out-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__out-text {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    background-color: rgba(255, 106, 0, 0.604);
+    line-height: 1.5;
+    padding: 40px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+    overflow: auto;
+  }
+
+  &__item-title {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-title-clolr);
+  }
+
+  &__item-text {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ff6c00;
+    margin-bottom: 30px;
+  }
 }
