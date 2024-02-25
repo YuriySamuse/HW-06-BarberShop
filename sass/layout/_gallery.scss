@@ -1,20 +1,35 @@
 .gallery {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    @include tablet {
+        padding-top: 100px;
+        padding-bottom: 106px;
+    }
+
+    @include desktop {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 
     &__top-text {
         color: var(--second-title-clolr);
-        margin-bottom: 44px;
+        margin-bottom: 40px;
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
     &__item {
-        flex-basis: calc(100% / 4 - 30px);
-        margin-left: 30px;
-        margin-bottom: 30px;
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            max-width: calc((100% - 30px) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: calc((100% - 90px) / 4);
+        }
     }
 }

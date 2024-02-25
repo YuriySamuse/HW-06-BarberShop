@@ -44,13 +44,16 @@
 		<header class="heder">
 			<div class="container">
 				<a
-					href=""
+					href="#"
 					class="heder__logo"
 				>
-					<img
-						src="./img/Logo.svg"
-						alt="Лого сайта"
-					/>
+					<svg
+						class="heder__logo-icon"
+						width="68"
+						height="55"
+					>
+						<use href="./img/symbol-defs.svg#icon-logo"></use>
+					</svg>
 				</a>
 				<nav class="heder__nav">
 					<ul class="heder__list list">
@@ -97,6 +100,87 @@
 					>
 						онлайн-запис
 					</button>
+				</div>
+				<button class="menu-open">
+					<svg
+						width="40"
+						height="40"
+					>
+						<use href="./img/symbol-defs.svg#icon-menu"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="mob-menu is-hidden">
+				<div class="container">
+					<button class="menu-close">X</button>
+					<nav class="mob-menu__nav">
+						<ul class="mob-menu__list list">
+							<li class="mob-menu__item">
+								<a
+									class="mob-menu__link link"
+									href=""
+									>Про нас</a
+								>
+							</li>
+							<li class="mob-menu__item">
+								<a
+									class="mob-menu__link link"
+									href=""
+									>Послуги та ціни</a
+								>
+							</li>
+							<li class="mob-menu__item">
+								<a
+									class="mob-menu__link link"
+									href=""
+									>Майстри</a
+								>
+							</li>
+							<li class="mob-menu__item">
+								<a
+									class="mob-menu__link link"
+									href=""
+									>Контакти</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<div class="mob-connect">
+						<a
+							class="mob-connect__tel link"
+							href="tel:+38 044 111 11 11"
+							>+38 044 111 11 11</a
+						>
+						<button
+							class="mob-connect__btn btn"
+							type="button"
+							data-modal-open
+						>
+							онлайн-запис
+						</button>
+					</div>
+					<div class="mob-soc">
+						<ul class="mob-soc__list list">
+							<li class="mob-soc__item">
+								<a
+									class="mob-soc__link link"
+									href="/"
+									target="_blank"
+									rel="noopener nofollow noreferrer"
+									>Instagram
+								</a>
+							</li>
+							<li class="mob-soc__item">
+								<a
+									class="mob-soc__link link"
+									href="/"
+									target="_blank"
+									rel="noopener nofollow noreferrer"
+									>Youtube
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -149,20 +233,40 @@
 				<div class="container">
 					<ul class="about__list list">
 						<li class="about__item">
-							<img
-								src="./img/img 1-min.jpg"
-								alt="барбер бреет бороду"
-								width="270"
-								height="445"
-							/>
+							<picture>
+								<source
+									srcset="./img/about1.jpg 1x, ./img/about1-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./img/about1-tab.jpg 1x, ./img/about1-tab-2x.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<img
+									src="./img/img 1-min.jpg"
+									alt="барбер бреет бороду"
+									width="270"
+									height="445"
+								/>
+							</picture>
 						</li>
 						<li class="about__item">
-							<img
-								src="./img/img 2-min.jpg"
-								alt="барбер делает оконтовку"
-								width="270"
-								height="445"
-							/>
+							<picture>
+								<source
+									srcset="./img/about2.jpg 1x, ./img/about2-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./img/about2-tab.jpg 1x, ./img/about2-tab-2x.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<img
+									src="./img/img 2-min.jpg"
+									alt="барбер делает оконтовку"
+									width="270"
+									height="445"
+								/>
+							</picture>
 						</li>
 					</ul>
 					<div
@@ -549,12 +653,25 @@
 					<h2 class="visually-hidden">Галерея</h2>
 
 					<ul class="gallery__list list">
-						<li class="c">
-							<img
-								src="./img/gallery/gallery1.jpg"
-								alt=""
-								width="270px"
-							/>
+						<li class="gallery__item">
+							<picture>
+								<source
+									srcset="./img/gallery/gallery1.jpg 1x, ./img/gallery/gallery1-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./img/gallery/gallery1-tab.jpg 1x, ./img/gallery/gallery1-tab-2x.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./img/gallery/gallery1-mob.jpg 1x, ./img/gallery/gallery1-mob-2x.jpg 2x"
+									media="(min-width: 428px)"
+								/>
+								<img
+									src="./img/gallery/gallery1.jpg"
+									alt=""
+								/>
+							</picture>
 						</li>
 						<li class="gallery__item">
 							<img
@@ -580,7 +697,7 @@
 					</ul>
 				</div>
 			</section>
-			<div class="info-wrap">
+			<!-- <div class="info-wrap">
 				<div class="container">
 					<section class="online">
 						<div class="online-wrap">
@@ -647,10 +764,10 @@
 						</div>
 					</section>
 				</div>
-			</div>
+			</div> -->
 		</main>
 
-		<footer>
+		<!-- <footer>
 			<div class="footer container">
 				<p class="footer__copy">Copyright 2022</p>
 				<ul class="footer__list list">
@@ -674,7 +791,7 @@
 					</li>
 				</ul>
 			</div>
-		</footer>
+		</footer> -->
 		<div
 			class="backdrop is-hidden"
 			data-modal
@@ -810,5 +927,6 @@
 			AOS.init();
 		</script>
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

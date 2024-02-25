@@ -1,18 +1,17 @@
-
 @import "./utils/variables";
 @import "./utils/is-hidden";
 @import "./utils/hidden";
+@import "./utils/mixins";
+@import "./utils/no-scroll";
 
 @import "./base/reset";
 @import "./base/common";
-
 
 @import "./components/container";
 @import "./components/modal";
 @import "./components/soc";
 @import "./components/close-btn";
-
-
+@import "./components/pretitle";
 
 @import "./layout/heder";
 @import "./layout/hero";
@@ -24,4 +23,3 @@
 @import "./layout/online";
 @import "./layout/contacts";
 @import "./layout/footer";
-

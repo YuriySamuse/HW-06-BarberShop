@@ -1,21 +1,45 @@
 .about {
-  padding-top: 139px;
-  padding-bottom: 121px;
-
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include tablet {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  @include desktop {
+    padding-top: 139px;
+    padding-bottom: 121px;
+  }
   & .container {
     display: flex;
   }
 
   &__list {
-    display: flex;
+    display: none;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      width: calc(50% - 15px);
+    }
   }
 
   &__item + .about__item {
-    margin-left: 30px;
+    @include desktop {
+      margin-left: 30px;
+    }
   }
 
   &__content {
-    margin-left: 64px;
+    width: 100%;
+    @include tablet {
+      margin-left: 30px;
+    }
+    @include desktop {
+      width: calc(50% - 15px);
+      padding: 15px;
+      // margin-left: 75px;
+    }
   }
 
   &__top-text {

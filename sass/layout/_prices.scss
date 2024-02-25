@@ -6,8 +6,16 @@
     background-size: cover;
     max-width: 1280px;
     margin: 0 auto;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include tablet {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    @include desktop {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 
     &__top-text {
         color: rgba(157, 164, 189, 0.6);
@@ -26,10 +34,10 @@
 
     &__wrap {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__list {
-        padding: 30px 40px;
         // border: 1px solid red;
         flex-grow: 1;
         &--light {
@@ -37,6 +45,13 @@
         }
         &--dark {
             background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+        }
+        padding: 10px 20px;
+        @include tablet {
+            padding: 20px 30px;
+        }
+        @include desktop {
+            padding: 30px 40px;
         }
     }
 

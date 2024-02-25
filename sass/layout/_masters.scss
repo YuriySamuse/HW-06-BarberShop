@@ -1,8 +1,16 @@
 .masters {
   background-color: #f7f7f7;
-  padding-top: 130px;
-  padding-bottom: 130px;
-  width: 100%;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 106px;
+  }
+
+  @include desktop {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 
   &__top-text {
     margin-bottom: var(--typical-margin);
@@ -14,12 +22,20 @@
 
   &__list {
     display: flex;
-    margin-left: -30px;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
   &__item {
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
+    width: 100%;
+    @include tablet {
+      max-width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+      max-width: calc((100% - 60px) / 3);
+    }
+    // margin-left: 30px;
     &:hover .masters__out-text {
       transform: translateY(0);
     }

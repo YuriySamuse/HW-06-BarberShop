@@ -1,15 +1,37 @@
 .benefits {
-    padding-top: 143px;
-    padding-bottom: 108px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include tablet {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    @include desktop {
+        padding-top: 143px;
+        padding-bottom: 108px;
+    }
 
     & .container {
         display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        @include tablet {
+        }
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__list {
         width: 370px;
         display: flex;
         flex-wrap: wrap;
+        @include tablet {
+            margin-left: auto;
+        }
+        @include desktop {
+            margin-left: 0;
+        }
     }
 
     &__item {
@@ -54,7 +76,13 @@
     }
 
     &__content {
-        margin-left: 130px;
+        @include tablet {
+            margin-right: auto;
+        }
+        @include desktop {
+            margin-left: 130px;
+            margin-right: 0;
+        }
     }
 
     &__top-text {

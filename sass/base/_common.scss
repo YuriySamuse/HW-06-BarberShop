@@ -4,27 +4,10 @@
 
 .link {
     text-decoration: none;
-} 
-
-.top-text {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    &::before {
-        content: '';
-        width: 60px;
-        height: 1px;
-        background-color: currentColor;
-        margin-right: 21px;
-    }
 }
 
 .title {
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-weight: 700;
     font-size: 42px;
     line-height: 1.16;
@@ -51,7 +34,7 @@
     background-color: transparent;
     border-radius: 25px;
     transition: color 300ms ease;
-    &:hover, 
+    &:hover,
     &:focus {
         color: var(--accent-color);
     }
